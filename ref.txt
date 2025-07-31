@@ -1,0 +1,13 @@
+https://github.com/techschool/simplebank
+https://dbdiagram.io/home
+
+https://hub.docker.com/_/postgres
+
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+docker run --name postgres16-for-go -p 5433:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:16.3-bookworm
+
+docker exec -it postgres16-for-go psql -U root 
+
+docker logs postgres16-for-go
+
